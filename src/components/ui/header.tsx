@@ -1,15 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import { useState } from "react";
-import lobohLogo from "@/assets/loboh-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
     { name: "Início", href: "#home" },
-    { name: "Tratamentos", href: "#services" },
-    { name: "Depoimentos", href: "#testimonials" },
+    { name: "Metodologia", href: "#methodology" },
+    { name: "Cases", href: "#cases" },
     { name: "Contato", href: "#contact" },
   ];
 
@@ -19,11 +18,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src={lobohLogo} 
-              alt="LOBOH Aesthetic Clinic Logo" 
-              className="h-10 w-auto"
-            />
+            <div className="text-2xl font-bold text-primary">
+              LOBOH
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,14 +39,14 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <a 
-              href="tel:+551133334444"
+              href="tel:+5531988552083"
               className="flex items-center text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4 mr-2" />
-              (11) 3333-4444
+              (31) 98855-2083
             </a>
-            <Button variant="primary" size="sm">
-              Agendar Consulta
+            <Button variant="cta" size="sm">
+              Diagnóstico Gratuito
             </Button>
           </div>
 
@@ -81,8 +78,8 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4 border-t border-border/50">
-                <Button variant="primary" className="w-full">
-                  Agendar Consulta
+                <Button variant="cta" className="w-full">
+                  Diagnóstico Gratuito
                 </Button>
               </div>
             </nav>

@@ -29,12 +29,21 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        cta: {
+          DEFAULT: "hsl(var(--cta))",
+          foreground: "hsl(var(--cta-foreground))",
+        },
+        neutral: {
+          DEFAULT: "hsl(var(--neutral))",
+          foreground: "hsl(var(--neutral-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          rose: "hsl(var(--accent-rose))",
-          gold: "hsl(var(--accent-gold))",
-          pearl: "hsl(var(--accent-pearl))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -74,6 +83,7 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
+        'gradient-cta': 'var(--gradient-cta)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-subtle': 'var(--gradient-subtle)',
         'gradient-glow': 'var(--gradient-glow)',
@@ -82,6 +92,7 @@ export default {
         'elegant': 'var(--shadow-elegant)',
         'soft': 'var(--shadow-soft)',
         'glow': 'var(--shadow-glow)',
+        'cta': 'var(--shadow-cta)',
       },
       transitionTimingFunction: {
         'elegant': 'var(--transition-elegant)',
@@ -108,6 +119,16 @@ export default {
           "0%, 100%": { opacity: "0.5" },
           "50%": { opacity: "0.8" },
         },
+        "pulse-cta": {
+          "0%, 100%": { 
+            transform: "scale(1)",
+            boxShadow: "var(--shadow-cta)"
+          },
+          "50%": { 
+            transform: "scale(1.02)",
+            boxShadow: "0 12px 35px -10px hsl(var(--cta) / 0.6)"
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -115,6 +136,7 @@ export default {
         "fade-in-up": "fade-in-up 0.6s ease-out",
         "float": "float 3s ease-in-out infinite",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
+        "pulse-cta": "pulse-cta 2s ease-in-out infinite",
       },
     },
   },

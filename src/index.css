@@ -2,57 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LOBOH Aesthetic Clinic Design System - All colors MUST be HSL */
+/* LOBOH Consultoria de Vendas Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Base colors - Clean and medical */
-    --background: 0 0% 100%;
-    --foreground: 220 20% 20%;
+    /* Base colors - Clean and professional */
+    --background: 0 0% 98%;
+    --foreground: 210 15% 6%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 210 15% 6%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 210 15% 6%;
 
-    /* Brand colors - Sophisticated aesthetic clinic palette */
-    --primary: 315 50% 60%; /* Elegant rose */
+    /* LOBOH Brand Colors */
+    --primary: 216 62% 54%; /* LOBOH Blue #547fbf */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 315 45% 75%;
-    --primary-glow: 315 60% 85%;
+    --primary-light: 216 57% 70%;
+    --primary-glow: 216 67% 85%;
 
-    --secondary: 250 40% 70%; /* Soft lavender */
+    /* CTA Color */
+    --cta: 344 76% 67%; /* Orange/Pink #e95178 */
+    --cta-foreground: 0 0% 100%;
+
+    /* LOBOH Secondary Colors */
+    --secondary: 210 15% 6%; /* Black #05070a */
     --secondary-foreground: 0 0% 100%;
     
-    --accent-rose: 340 60% 75%;
-    --accent-gold: 45 80% 70%;
-    --accent-pearl: 200 15% 95%;
+    /* LOBOH Neutral */
+    --neutral: 210 5% 38%; /* Gray #616160 */
+    --neutral-foreground: 0 0% 100%;
+    
+    /* Success color */
+    --success: 142 76% 36%; /* Green #28a745 */
+    --success-foreground: 0 0% 100%;
 
     /* Neutral palette */
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 210 15% 97%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 220 15% 96%;
-    --accent-foreground: 220 20% 20%;
+    --accent: 210 15% 96%;
+    --accent-foreground: 210 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 90%;
-    --input: 220 15% 95%;
-    --ring: 315 50% 60%;
+    --border: 210 15% 88%;
+    --input: 210 15% 95%;
+    --ring: 216 62% 54%;
 
-    /* Gradients */
+    /* LOBOH Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--cta)), hsl(344 81% 72%));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--accent-pearl)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
     --gradient-glow: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.3) 0%, transparent 70%);
 
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    /* LOBOH Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
     --shadow-soft: 0 5px 20px -5px hsl(var(--muted-foreground) / 0.15);
     --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
+    --shadow-cta: 0 8px 25px -8px hsl(var(--cta) / 0.4);
 
     /* Animations */
     --transition-elegant: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);

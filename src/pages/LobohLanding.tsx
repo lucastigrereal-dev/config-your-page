@@ -1,8 +1,13 @@
 import Header from "@/components/ui/header";
 import HeroSection from "@/components/ui/hero-section";
-import ServicesSection from "@/components/ui/services-section";
-import TestimonialsSection from "@/components/ui/testimonials-section";
-import ContactSection from "@/components/ui/contact-section";
+import ProblemsSection from "@/components/ui/problems-section";
+import AuthoritySection from "@/components/ui/authority-section";
+import MethodologySection from "@/components/ui/services-section";
+import DiagnosisSection from "@/components/ui/contact-section";
+import UrgencySection from "@/components/ui/urgency-section";
+import FaqSection from "@/components/ui/faq-section";
+import GuaranteeSection from "@/components/ui/guarantee-section";
+import FinalCtaSection from "@/components/ui/final-cta-section";
 import Footer from "@/components/ui/footer";
 
 const LobohLanding = () => {
@@ -13,14 +18,29 @@ const LobohLanding = () => {
         <section id="home">
           <HeroSection />
         </section>
-        <section id="services">
-          <ServicesSection />
+        <section id="problems">
+          <ProblemsSection />
         </section>
-        <section id="testimonials">
-          <TestimonialsSection />
+        <section id="cases">
+          <AuthoritySection />
+        </section>
+        <section id="methodology">
+          <MethodologySection />
+        </section>
+        <section id="diagnosis">
+          <DiagnosisSection />
+        </section>
+        <section id="urgency">
+          <UrgencySection />
+        </section>
+        <section id="faq">
+          <FaqSection />
+        </section>
+        <section id="guarantee">
+          <GuaranteeSection />
         </section>
         <section id="contact">
-          <ContactSection />
+          <FinalCtaSection />
         </section>
       </main>
       <Footer />
