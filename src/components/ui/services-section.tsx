@@ -1,55 +1,56 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Target, Smartphone, GraduationCap, Zap } from "lucide-react";
 
 const MethodologySection = () => {
   const pillars = [
     {
       icon: Target,
-      title: "ESTRATÉGIA",
+      title: "Estratégia Clínica Comercial",
       items: [
-        "ICP Perfeito para Estética",
-        "Métricas que importam",
-        "Precificação psicológica"
+        "Definição do ICP cirúrgico e dos perfis ideais de paciente",
+        "Instalação de métricas que realmente importam para a clínica",
+        "Estrutura de precificação validada para aumentar margem e aceitação"
       ]
     },
     {
       icon: Smartphone,
-      title: "TECNOLOGIA",
+      title: "Tecnologia Integrada",
       items: [
-        "CRM especializado em clínicas",
-        "Automação WhatsApp + Follow-up",
-        "Dashboard em tempo real"
+        "CRM desenvolvido para clínicas, fácil de usar no dia a dia",
+        "Automação de WhatsApp e follow-up para reduzir no-show e aumentar retorno",
+        "Dashboards em tempo real que mostram os números que sustentam decisões"
       ]
     },
     {
       icon: GraduationCap,
-      title: "CAPACITAÇÃO",
+      title: "Capacitação da Equipe",
       items: [
-        "Treinamento específico para estética",
-        "Scripts de vendas consultivas",
-        "Cultura de alta performance"
+        "Treinamentos práticos e contínuos adaptados à realidade clínica",
+        "Scripts de atendimento e vendas consultivas prontos para uso",
+        "Cultura de alta performance que motiva e reduz turnover"
       ]
     },
     {
       icon: Zap,
-      title: "GESTÃO ÁGIL",
+      title: "Gestão Ágil e Previsível",
       items: [
-        "Sprints semanais de melhoria",
-        "Rituais de gestão estruturados",
-        "Melhoria contínua baseada em dados"
+        "Sprints semanais para atacar gargalos rapidamente",
+        "Rituais de gestão que mantêm foco e disciplina no time",
+        "Ciclo de melhoria contínua com base em dados concretos"
       ]
     }
   ];
 
   return (
-    <section className="py-20 px-6 bg-card">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-gradient-subtle">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Sistema Loboh Sales Agile para Estética
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Sistema Lobôh Sales Agile para Clínicas
           </h2>
-          <p className="text-xl text-muted-foreground">
-            4 Pilares que Dobram Conversão
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            4 Pilares que Transformam Consultas em Procedimentos
           </p>
         </div>
 
@@ -82,6 +83,11 @@ const MethodologySection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="text-center mt-16">
+          <Button variant="cta-secondary" size="lg" className="text-lg px-8 py-4">
+            Ver Como Implantamos em 90 Dias
+          </Button>
         </div>
       </div>
     </section>

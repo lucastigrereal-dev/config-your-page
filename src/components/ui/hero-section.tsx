@@ -23,45 +23,51 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <div className="animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-primary-light to-white bg-clip-text text-transparent leading-tight">
-            Transforme sua
-            <br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Beleza Natural
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Na LOBOH, oferecemos tratamentos estéticos avançados com tecnologia de ponta 
-            e cuidado personalizado para realçar sua beleza única.
-          </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+              <span className="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
+                Meta Batida. Equipe de Alta Performance.
+              </span>
+              <br />
+              <span className="bg-gradient-rose bg-clip-text text-transparent">
+                Consultas que Viram Procedimentos.
+              </span>
+            </h1>
+            
+            <div className="mb-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-secondary mb-4">
+                Da Agenda Cheia ao Caixa Cheio
+              </h2>
+              <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed">
+                Somos especialistas em clínicas e sabemos exatamente onde agir. Não é curso: é a integração de processos, método, cultura e tecnologia para converter agenda em faturamento real.
+              </p>
+            </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="group">
-              Agendar Consulta
+            <Button variant="cta" size="lg" className="group">
+              Quero Bater Minhas Metas
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             
             <Button variant="outline-hero" size="lg" className="group">
               <Play className="mr-2 h-5 w-5" />
-              Ver Tratamentos
+              Diagnóstico Gratuito
             </Button>
           </div>
 
           <div className="flex items-center justify-center gap-8 mt-12 text-white/80">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">500+</div>
-              <div className="text-sm">Clientes Satisfeitos</div>
+              <div className="text-3xl font-bold text-white">Resultados</div>
+              <div className="text-sm">Reais</div>
             </div>
             <div className="w-px h-8 bg-white/30"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">5</div>
-              <div className="text-sm">Anos de Experiência</div>
+              <div className="text-3xl font-bold text-white">100%</div>
+              <div className="text-sm">de Satisfação</div>
             </div>
             <div className="w-px h-8 bg-white/30"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">98%</div>
-              <div className="text-sm">Satisfação</div>
+              <div className="text-3xl font-bold text-white">Método</div>
+              <div className="text-sm">Comprovado</div>
             </div>
           </div>
         </div>

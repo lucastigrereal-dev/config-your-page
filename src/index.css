@@ -16,34 +16,34 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 15% 6%;
 
-    /* LOBOH Brand Colors */
-    --primary: 216 62% 54%; /* LOBOH Blue #547fbf */
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 216 57% 70%;
-    --primary-glow: 216 67% 85%;
+    /* Primary colors - Azul principal */
+    --primary: 214 95% 48%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 214 95% 65%;
+    --primary-glow: 214 95% 75%;
 
-    /* CTA Color */
-    --cta: 344 76% 67%; /* Orange/Pink #e95178 */
+    /* CTA Color - Rosa nude vibrante */
+    --cta: 342 65% 68%;
     --cta-foreground: 0 0% 100%;
 
-    /* LOBOH Secondary Colors */
-    --secondary: 210 15% 6%; /* Black #05070a */
-    --secondary-foreground: 0 0% 100%;
+    /* LOBOH Secondary Colors - Rosa nude suave */
+    --secondary: 342 42% 84%;
+    --secondary-foreground: 342 42% 15%;
     
     /* LOBOH Neutral */
-    --neutral: 210 5% 38%; /* Gray #616160 */
+    --neutral: 210 5% 38%;
     --neutral-foreground: 0 0% 100%;
     
     /* Success color */
-    --success: 142 76% 36%; /* Green #28a745 */
+    --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
 
     /* Neutral palette */
     --muted: 210 15% 97%;
     --muted-foreground: 210 15% 45%;
 
-    --accent: 210 15% 96%;
-    --accent-foreground: 210 15% 15%;
+    --accent: 342 25% 92%;
+    --accent-foreground: 342 42% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -54,10 +54,11 @@
 
     /* LOBOH Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--cta)), hsl(344 81% 72%));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--cta)), hsl(342 65% 75%));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--accent)) 100%);
     --gradient-glow: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.3) 0%, transparent 70%);
+    --gradient-rose: linear-gradient(135deg, hsl(342 65% 68%) 0%, hsl(342 42% 84%) 100%);
 
     /* LOBOH Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);

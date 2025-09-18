@@ -18,6 +18,8 @@ const buttonVariants = cva(
         primary: "bg-gradient-primary text-primary-foreground hover:opacity-90 shadow-elegant transition-all duration-300 hover:shadow-glow",
         cta: "bg-gradient-cta text-cta-foreground shadow-cta hover:shadow-glow transition-all duration-300 hover:scale-105 font-bold",
         "cta-pulse": "bg-gradient-cta text-cta-foreground animate-pulse-cta font-bold text-lg",
+        "cta-secondary": "bg-gradient-rose text-white hover:opacity-90 shadow-soft transition-all duration-300 hover:scale-105 font-semibold",
+        "outline-primary": "border-2 border-primary text-primary bg-transparent hover:bg-primary/10 transition-all duration-300",
         hero: "bg-white text-primary hover:bg-white/90 shadow-elegant transition-all duration-300 hover:shadow-glow hover:scale-105",
         "outline-hero": "border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all duration-300 hover:border-white/50",
         whatsapp: "bg-green-500 text-white hover:bg-green-600 shadow-soft transition-all duration-300",

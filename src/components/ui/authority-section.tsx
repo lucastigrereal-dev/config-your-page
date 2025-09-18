@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote, CheckCircle, TrendingUp, Users, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Quote, CheckCircle, TrendingUp, TrendingDown, Users, Award } from "lucide-react";
 
 const AuthoritySection = () => {
   const authorityNumbers = [
@@ -13,78 +14,104 @@ const AuthoritySection = () => {
     <section className="py-20 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Como a Loboh Já Transformou 150+ Clínicas em Máquinas de Conversão
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Prova Social - Números e Cases
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Números que sustentam a metodologia
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-          {/* Case Principal */}
-          <div className="lg:col-span-2">
-            <Card className="bg-gradient-subtle border-primary/20 shadow-elegant">
-              <CardContent className="p-8">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-secondary mb-2">
-                    KARINA ESTÉTICA - BELO HORIZONTE
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-neutral">ANTES:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• 18% conversão</li>
-                        <li>• R$45k/mês</li>
-                      </ul>
-                    </div>
-                    <div className="space-y-2">
-                      <h4 className="font-semibold text-success">DEPOIS:</h4>
-                      <ul className="space-y-1 text-sm text-success">
-                        <li>• 42% conversão</li>
-                        <li>• R$127k/mês</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="bg-cta/10 p-4 rounded-lg mb-4">
-                    <p className="font-bold text-cta text-lg">
-                      RESULTADO: +182% faturamento em 90 dias
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      MÉTODO: Sistema Loboh Sales Agile 360º
-                    </p>
-                  </div>
-                </div>
-
-                <div className="relative">
-                  <Quote className="absolute -top-2 -left-2 h-8 w-8 text-primary/30" />
-                  <blockquote className="italic text-lg text-foreground pl-8">
-                    "Antes eu era médica fazendo venda. Hoje tenho uma EQUIPE vendendo enquanto eu opero."
-                  </blockquote>
-                  <cite className="block text-right text-sm font-semibold text-primary mt-2">
-                    - Dra. Karina Santos
-                  </cite>
-                </div>
-              </CardContent>
-            </Card>
+        {/* Numbers Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">Resultados</div>
+            <div className="text-muted-foreground">Reais</div>
           </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">R$47M</div>
+            <div className="text-muted-foreground">em vendas geradas</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">+182%</div>
+            <div className="text-muted-foreground">faturamento médio em 90 dias</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
+            <div className="text-muted-foreground">de satisfação</div>
+          </div>
+        </div>
 
-          {/* Números de Autoridade */}
-          <div className="space-y-6">
-            <h3 className="text-xl font-bold text-center text-secondary mb-8">
-              NÚMEROS DE AUTORIDADE
-            </h3>
-            {authorityNumbers.map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
-                  <item.icon className="h-8 w-8 text-primary-foreground" />
+        {/* Success Story Card */}
+        <Card className="mb-16 border-secondary/20 bg-gradient-to-br from-secondary/5 to-secondary/10">
+          <CardContent className="p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground mb-2">Case — Karina Estética (Belo Horizonte)</h3>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-destructive/20 rounded-full flex items-center justify-center">
+                    <TrendingDown className="h-6 w-6 text-destructive" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">ANTES</h4>
+                  </div>
                 </div>
-                <div className="text-3xl font-bold text-primary mb-1">
-                  {item.number}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {item.label}
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Conversão:</span>
+                    <span className="font-bold text-destructive">18%</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Faturamento:</span>
+                    <span className="font-bold text-destructive">R$45k/mês</span>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
+              
+              <div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 bg-success/20 rounded-full flex items-center justify-center">
+                    <TrendingUp className="h-6 w-6 text-success" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">DEPOIS</h4>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Conversão:</span>
+                    <span className="font-bold text-success">42%</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">Faturamento:</span>
+                    <span className="font-bold text-success">R$127k/mês</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 p-6 bg-success/10 rounded-lg border border-success/20">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-success mb-2">Resultado: +182% de faturamento em 90 dias</div>
+                <blockquote className="text-lg italic text-foreground mt-4">
+                  "Antes eu era médica fazendo venda. Hoje tenho uma equipe vendendo enquanto eu opero."
+                </blockquote>
+                <cite className="text-secondary font-semibold mt-3 block">— Dra. Karina Santos</cite>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* CTA after case */}
+        <div className="text-center">
+          <Button variant="cta" size="lg" className="text-lg px-8 py-4">
+            Quero Ser o Próximo Case
+          </Button>
         </div>
       </div>
     </section>
